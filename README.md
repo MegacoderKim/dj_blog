@@ -1,4 +1,4 @@
-# ![Yum Kenya](static/img/python.png)
+# ![Dj Blog](static/img/python.png)
 
 ## Requirements
 * Postgres 9.5 - Main datastore
