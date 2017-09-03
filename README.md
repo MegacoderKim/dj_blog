@@ -1,4 +1,4 @@
-# ![Dj Blog](static/img/python.png)
+# ![Dj Blog](static/img/python.jpg)
 
 ## Requirements
 * Postgres 9.5 - Main datastore
