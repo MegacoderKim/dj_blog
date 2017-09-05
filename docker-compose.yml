@@ -1,0 +1,23 @@
+version: '2'
+services:
+    db:
+      image: postgres:9.5
+      environment:
+        - POSTGRES_DB=blog_db
+        - POSTGRES_PASSWORD=eix8Pipo5niegu2sie1i
+        - POSTGRES_USER=blog_user
+      ports:
+        - 5432:5432
+    
+    blog:
+        build: .
+        depends_on:
+          - db
+        volumes:
+          - .:/code
+        ports:
+          - "8000:8000"
+        links:
+          - db
+        environment:
+          - DJANGO_SETTINGS_MODULE=djblog.docker-settings
